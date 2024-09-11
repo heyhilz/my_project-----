@@ -105,15 +105,14 @@ def process_data2(path):
     joint = []
     xx = []
     yy = []
+    zz = []
     for i in range(len(x)):
         index = i - 1
         joint.append([z[index], t[index], r1[index], r2[index], x[index]])
         result = joint_to_world_d156_main(assign_joint_values_to_both_hands(joint[i]))
         xx.append(result.p.x)
         yy.append(result.p.y)
-
-    # print(joint_to_world(joint[33]).p[0])
-    # print(joint_to_world(joint[33]).p[1])
+        zz.append(result.p.z)
 
     vx = np.zeros(len(xx))
     vy = np.zeros(len(yy))
@@ -123,6 +122,7 @@ def process_data2(path):
     data_second = {
         'x': xx,
         'y': yy,
+        'z': zz,
         'vx': vx,
         'vy': vy
     }
