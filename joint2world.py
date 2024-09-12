@@ -140,15 +140,6 @@ def process_data(file_path):
     vx[1:] = np.diff(xx)
     vy[1:] = np.diff(yy)
 
-    plt.figure(figsize=(8, 8))
-    plt.plot(xx, yy, marker='o', linestyle='-', color='b')
-    plt.xlabel('X')
-    plt.ylabel('Y')
-    plt.title('Track')
-    plt.grid(True)
-    plt.axis('equal')  # 保持x和y的比例相同
-    plt.show()
-
     data_second = {
         'x':xx,
         'y':yy,
@@ -165,3 +156,12 @@ def process_data(file_path):
             print(f"DATA WRITTEN TO {output_file_path} - Sheet2")
     except Exception as e:
         print(f"Error writing data: {e}")
+
+    plt.figure(figsize=(8, 8))
+    plt.plot(xx, yy, marker='o', linestyle='-', color='b')
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.title('Track')
+    plt.grid(True)
+    plt.axis('equal')  # 保持x和y的比例相�?
+    plt.show()
