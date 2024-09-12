@@ -9,23 +9,22 @@ class App:
     def __init__(self, root):
         self.root = root
         self.root.title("XY Trajectory Drawer")
-        self.root.geometry("800x600")
+        self.root.geometry("800x800")
 
-        # 创建一个拖放区域
-        self.drop_area = tk.Label(root, text="Drag and drop your .xlsx file here", width=50, height=10, bg="lightgray")
+        # 拖放区域
+        self.drop_area = tk.Label(root, text="Drag and drop your .xlsx file here", width=100, height=10, bg="lightgray")
         self.drop_area.pack(pady=20)
 
-        # 初始化拖放
         self.drop_area.drop_target_register(DND_FILES)
         self.drop_area.dnd_bind('<<Drop>>', self.on_file_drop)
 
-        # Matplotlib 图形
+        # 静态图
         self.fig, self.ax = plt.subplots(figsize=(6, 4))
         self.canvas = FigureCanvasTkAgg(self.fig, master=root)
         self.canvas.get_tk_widget().pack()
 
-        # 按钮
-        self.plot_button = tk.Button(root, text="Plot Trajectory", command=self.plot_trajectory)
+        # 按钮（放在图形下方）
+        self.plot_button = tk.Button(root, text="Play", command=self.plot_trajectory)
         self.plot_button.pack(pady=10)
 
         self.data = None  # 存储数据
@@ -38,7 +37,7 @@ class App:
     def load_data(self, file_path):
         # 读取.xlsx文件
         try:
-            df = pd.read_excel(file_path,sheet_name = 1, engine='openpyxl')
+            df = pd.read_excel(file_path, sheet_name=1, engine='openpyxl')
             self.data = df.to_numpy()
             
             if self.data.shape[1] < 2:
@@ -75,5 +74,3 @@ if __name__ == "__main__":
     root = TkinterDnD.Tk()  # 创建TkinterDnD的Tk窗口
     app = App(root)
     root.mainloop()
-
-
