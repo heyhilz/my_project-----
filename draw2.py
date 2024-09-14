@@ -153,3 +153,4 @@ if __name__ == '__main__':
     ex = AnimationWindow()
     ex.show()
     sys.exit(app.exec_())
+    #test
