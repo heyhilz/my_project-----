@@ -157,7 +157,7 @@ def process_data(file_path):
     except Exception as e:
         print(f"Error writing data: {e}")
 
-    plt.figure(figsize=(8, 8))
+    plt.figure(figsize=(8, 8))  #FIXME: 多次出现跳点，需check
     plt.plot(xx, yy, marker='o', linestyle='-', color='b')
     plt.xlabel('X')
     plt.ylabel('Y')
