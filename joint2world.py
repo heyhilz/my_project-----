@@ -6,7 +6,7 @@ matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 RAD_ANGLE = 180.0 / np.pi
-arm_length = 225
+arm_length = 225 #TODO: connect to robot type
 ALL = 1
 
 class SC_MOD:
@@ -163,5 +163,5 @@ def process_data(file_path):
     plt.ylabel('Y')
     plt.title('Track')
     plt.grid(True)
-    plt.axis('equal')  # 保持x和y的比例相�?
+    plt.axis('equal')  # 保持x和y的比例相�?
     plt.show()
