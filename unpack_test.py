@@ -40,7 +40,7 @@ CF_LOG_SIZE = (
     CF_LOG_HINT_SIZE + CF_LOG_ETHCAT_SIZE
 )
 
-base_path = 'D:\\HuaweiMoveData\\Users\\12088\\Desktop\\2024-09-18-15-06-14'
+base_path = '2024-09-18-15-06-14'
 
 def create_folder(folder_name):
     # 创建文件夹
