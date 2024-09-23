@@ -123,6 +123,6 @@ class App:
 
 
 if __name__ == "__main__":
-    root = TkinterDnD.Tk()  # 创建TkinterDnD的Tk窗口
+    root = TkinterDnD.Tk()
     app = App(root)
     root.mainloop()
