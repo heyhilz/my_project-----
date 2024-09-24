@@ -21,6 +21,9 @@ ETHCAT_DATA_LENGTH = 256
 
 SYSTEM_AXES = 9 #4.6.89
 
+R_AXES = 6
+S_AXES = 3
+
 CF_LOG_PLAN_SIZE = (8 * LOG_PLAN_NUM) * 2 + (4 * SYSTEM_AXES * LOG_PLAN_NUM)#s ns joint
 CF_LOG_ARGU_SIZE = (8 * LOG_ARGU_NUM) * 2 + (4 * 20 * LOG_ARGU_NUM)#s ns argu
 CF_LOG_OUT_SIZE = (8 * LOG_OUT_NUM) * 2 + (4 * SYSTEM_AXES * LOG_OUT_NUM * 2)#s ns enco joint
@@ -40,7 +43,7 @@ CF_LOG_SIZE = (
     CF_LOG_HINT_SIZE + CF_LOG_ETHCAT_SIZE
 )
 
-base_path = '2024-09-18-15-06-14'
+base_path = '2024-09-18-14-50-44'
 
 def create_folder(folder_name):
     # 创建文件夹
@@ -100,6 +103,8 @@ def parse_my_log(input_file):
                 plan_joint.append(joint_data)
                 offset += 4 * LOG_PLAN_NUM
             log_data['plan'].append((plan_sec, plan_nsec, plan_joint))
+
+            offset = CF_LOG_PLAN_SIZE
             
             # 解析 argu 数据
             argu_sec = struct.unpack_from('Q' * LOG_ARGU_NUM, record, offset)
@@ -107,27 +112,13 @@ def parse_my_log(input_file):
             argu_nsec = struct.unpack_from('Q' * LOG_ARGU_NUM, record, offset)
             offset += 8 * LOG_ARGU_NUM
             argu_data = []
-            for _ in range(20):
+            for _ in range(R_AXES + 1):
                 argu_values = struct.unpack_from('f' * LOG_ARGU_NUM, record, offset)
                 argu_data.append(argu_values)
                 offset += 4 * LOG_ARGU_NUM
             log_data['argu'].append((argu_sec, argu_nsec, argu_data))
             
-            # 解析 out 数据
-            out_sec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
-            offset += 8 * LOG_OUT_NUM
-            out_nsec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
-            offset += 8 * LOG_OUT_NUM
-            out_encoders = []
-            out_joints = []
-            for _ in range(SYSTEM_AXES):
-                enco_data = struct.unpack_from('i' * LOG_OUT_NUM, record, offset)
-                out_encoders.append(enco_data)
-                offset += 4 * LOG_OUT_NUM
-                joint_data = struct.unpack_from('f' * LOG_OUT_NUM, record, offset)
-                out_joints.append(joint_data)
-                offset += 4 * LOG_OUT_NUM
-            log_data['out'].append((out_sec, out_nsec, out_encoders, out_joints))
+            offset = CF_LOG_PLAN_SIZE + CF_LOG_ARGU_SIZE
 
             # 解析 in 数据
             in_sec = struct.unpack_from('Q' * LOG_IN_NUM, record, offset)
@@ -137,7 +128,7 @@ def parse_my_log(input_file):
             in_encoders = []
             in_joints = []
             in_rolls = []
-            for _ in range(SYSTEM_AXES):
+            for _ in range(R_AXES):
                 enci_data = struct.unpack_from('i' * LOG_IN_NUM, record, offset)
                 in_encoders.append(enci_data)
                 offset += 4 * LOG_IN_NUM
@@ -148,6 +139,22 @@ def parse_my_log(input_file):
                 in_rolls.append(roll_data)
                 offset += 4 * LOG_IN_NUM
             log_data['in'].append((in_sec, in_nsec, in_encoders, in_joints, in_rolls))
+
+            # 解析 out 数据
+            out_sec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
+            offset += 8 * LOG_OUT_NUM
+            out_nsec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
+            offset += 8 * LOG_OUT_NUM
+            out_encoders = []
+            out_joints = []
+            for _ in range(R_AXES):
+                enco_data = struct.unpack_from('i' * LOG_OUT_NUM, record, offset)
+                out_encoders.append(enco_data)
+                offset += 4 * LOG_OUT_NUM
+                joint_data = struct.unpack_from('f' * LOG_OUT_NUM, record, offset)
+                out_joints.append(joint_data)
+                offset += 4 * LOG_OUT_NUM
+            log_data['out'].append((out_sec, out_nsec, out_encoders, out_joints))
 
             # 解析 key 数据
             key_sec = struct.unpack_from('Q' * LOG_KEY_NUM, record, offset)
@@ -255,38 +262,38 @@ def write_log_data_to_txt(log_data, folder_name):
             for entry in entries:
                 if log_type == 'plan':
                     sec, nsec, plan_joint = entry
-                    f.write(f"Time:\n")
                     for k in range(LOG_PLAN_NUM):
-                        f.write(f"{sec[k]}.{nsec[k]}: ")
-                        for j in range(SYSTEM_AXES):
-                            f.write(f"Joint {j}: {plan_joint[j][k]}; ")
+                        f.write(f"time:")
+                        f.write(f"{sec[k]}.{nsec[k]}:")
+                        for j in range(R_AXES):
+                            f.write(f"joint{j}:{plan_joint[j][k]};")
                         f.write("\n")
                 
                 elif log_type == 'argu':
                     sec, nsec, argu_data = entry
-                    f.write(f"Time:\n")
                     for k in range(LOG_ARGU_NUM):
-                        f.write(f"{sec[k]}.{nsec[k]}: ")
-                        for j in range(20):
-                            f.write(f"Argu {j}: {argu_data[j][k]}; ")
+                        f.write(f"time:")
+                        f.write(f"{sec[k]}.{nsec[k]}:")
+                        for j in range(R_AXES + 1):
+                            f.write(f"argu{j}:{argu_data[j][k]};")
                         f.write("\n")
 
                 elif log_type == 'out':
                     sec, nsec, out_encoders, out_joints = entry
-                    f.write(f"Time:\n")
                     for k in range(LOG_OUT_NUM):
+                        f.write(f"time:")
                         f.write(f"{sec[k]}.{nsec[k]}: ")
-                        for j in range(SYSTEM_AXES):
-                            f.write(f"Enco {j}: {out_encoders[j][k]}; Joint {j}: {out_joints[j][k]}; ")
+                        for j in range(R_AXES):
+                            f.write(f"enco{j}:{out_encoders[j][k]},joint {j}:{out_joints[j][k]};")
                         f.write("\n")
 
                 elif log_type == 'in':
                     sec, nsec, in_encoders, in_joints, in_rolls = entry
-                    f.write(f"Time:\n")
                     for k in range(LOG_IN_NUM):
+                        f.write(f"time:")
                         f.write(f"{sec[k]}.{nsec[k]}: ")
-                        for j in range(SYSTEM_AXES):
-                            f.write(f"Enci {j}: {in_encoders[j][k]}; Joint {j}: {in_joints[j][k]}; Roll {j}: {in_rolls[j][k]}; ")
+                        for j in range(R_AXES):
+                            f.write(f"enci{j}:{in_encoders[j][k]},joint{j}:{in_joints[j][k]},roll{j}:{in_rolls[j][k]};")
                         f.write("\n")
 
                 elif log_type == 'key':
