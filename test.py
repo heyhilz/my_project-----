@@ -46,7 +46,7 @@ CF_LOG_SIZE = (
 base_path = '2024-09-18-14-50-44'
 
 input_file = '2024-09-18-14-50-44\\my_log.log'
-output_file = '2024-09-18-14-50-44\\plan.txt'
+output_file = '2024-09-18-14-50-44\\out.txt'
 
 log_data = {
         'plan': [],
@@ -65,15 +65,17 @@ log_data = {
 print(f'cf log size{CF_LOG_SIZE}')
 print(f'cf plan log size{CF_LOG_PLAN_SIZE}')
 
+# ... 省略前面的代码 ...
+
 with open(input_file, 'rb') as infile:
     while True:
-        record = infile.read()
-        print(len(record))
+        record = infile.read(CF_LOG_SIZE)  # 每次读取一个完整的记录
         if len(record) == 0:
             break  # 到达文件末尾
 
         offset = 0
         
+        # 解析 plan 数据
         plan_sec = struct.unpack_from('Q' * LOG_PLAN_NUM, record, offset)
         offset += 8 * LOG_PLAN_NUM
         plan_nsec = struct.unpack_from('Q' * LOG_PLAN_NUM, record, offset)
@@ -85,12 +87,92 @@ with open(input_file, 'rb') as infile:
             offset += 4 * LOG_PLAN_NUM
         log_data['plan'].append((plan_sec, plan_nsec, plan_joint))
 
-        print(f's{len(plan_sec)},ns{len(plan_nsec)},joint{len(plan_joint)}')
-        # print(plan_sec)
-        # print(plan_nsec)
+        # 打印调试信息
+        print(f's{len(plan_sec)}, ns{len(plan_nsec)}, joint{len(plan_joint)}')
         print(plan_joint)
 
-        print(f"{plan_sec[0]}.{plan_nsec[0]}")
-        # print(log_data['plan'][0])
-        print(plan_joint[0][0])
+        # 解析 argu 数据
+        argu_sec = struct.unpack_from('Q' * LOG_ARGU_NUM, record, offset)
+        offset += 8 * LOG_ARGU_NUM
+        argu_nsec = struct.unpack_from('Q' * LOG_ARGU_NUM, record, offset)
+        offset += 8 * LOG_ARGU_NUM
+        argu_data = []
+        for _ in range(R_AXES + 1):
+            argu_values = struct.unpack_from('f' * LOG_ARGU_NUM, record, offset)
+            argu_data.append(argu_values)
+            offset += 4 * LOG_ARGU_NUM
+        log_data['argu'].append((argu_sec, argu_nsec, argu_data))
+        
+        offset = CF_LOG_PLAN_SIZE + CF_LOG_ARGU_SIZE
 
+
+        # 解析 in 数据
+        in_sec = struct.unpack_from('Q' * LOG_IN_NUM, record, offset)
+        offset += 8 * LOG_IN_NUM
+        in_nsec = struct.unpack_from('Q' * LOG_IN_NUM, record, offset)
+        offset += 8 * LOG_IN_NUM
+        in_encoders = []
+        in_joints = []
+        in_rolls = []
+        for _ in range(R_AXES):
+            enci_data = struct.unpack_from('i' * LOG_IN_NUM, record, offset)
+            in_encoders.append(enci_data)
+            offset += 4 * LOG_IN_NUM
+            joint_data = struct.unpack_from('f' * LOG_IN_NUM, record, offset)
+            in_joints.append(joint_data)
+            offset += 4 * LOG_IN_NUM
+            roll_data = struct.unpack_from('i' * LOG_IN_NUM, record, offset)
+            in_rolls.append(roll_data)
+            offset += 4 * LOG_IN_NUM
+        log_data['in'].append((in_sec, in_nsec, in_encoders, in_joints, in_rolls))
+
+        offset = CF_LOG_PLAN_SIZE + CF_LOG_ARGU_SIZE + CF_LOG_IN_SIZE
+
+        # 解析 out 数据
+        out_sec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
+        offset += 8 * LOG_OUT_NUM
+        out_nsec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
+        offset += 8 * LOG_OUT_NUM
+        out_encoders = []
+        out_joints = []
+        for _ in range(R_AXES):
+            enco_data = struct.unpack_from('i' * LOG_OUT_NUM, record, offset)
+            out_encoders.append(enco_data)
+            offset += 4 * LOG_OUT_NUM
+            joint_data = struct.unpack_from('f' * LOG_OUT_NUM, record, offset)
+            out_joints.append(joint_data)
+            offset += 4 * LOG_OUT_NUM
+        log_data['out'].append((out_sec, out_nsec, out_encoders, out_joints))
+
+
+
+
+# 写入到输出文件
+with open(output_file, 'w') as f:
+    # for entry in log_data['plan']:
+    #     sec, nsec, plan_joint = entry
+    #     for k in range(LOG_PLAN_NUM):
+    #         f.write(f"time: {sec[k]}.{nsec[k]}: ")
+    #         for j in range(R_AXES):
+    #             f.write(f"joint{j}:{plan_joint[j][k]}; ")
+    #         f.write("\n")
+    #         print(f"{sec[k]}.{nsec[k]}: ", end='')
+    #         for j in range(R_AXES):
+    #             print(f"joint{j}:{plan_joint[j][k]}; ", end='')
+    #         print()  # 换行
+
+    for entry in log_data['out']:
+        sec, nsec, out_encoders, out_joints = entry
+        for k in range(LOG_OUT_NUM):
+            f.write(f"time:{sec[k]}.{nsec[k]}:")
+            for j in range(R_AXES):
+                f.write(f"enco{j}:{out_encoders[j][k]},joint{j}:{out_joints[j][k]};")
+            f.write("\n")
+            print(f"{sec[k]}.{nsec[k]}: ", end='')
+            for j in range(R_AXES):
+                print(f"enco{j}:{out_encoders[j][k]},joint{j}:{out_joints[j][k]}; ", end='')
+            print()  # 换行
+
+print("Data has been written to plan.txt.")
+
+        

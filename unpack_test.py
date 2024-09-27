@@ -268,6 +268,7 @@ def write_log_data_to_txt(log_data, folder_name):
                         for j in range(R_AXES):
                             f.write(f"joint{j}:{plan_joint[j][k]};")
                         f.write("\n")
+                    print("Data has been written to plan.txt.")
                 
                 elif log_type == 'argu':
                     sec, nsec, argu_data = entry
