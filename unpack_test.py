@@ -89,13 +89,16 @@ def parse_my_log(input_file):
             record = infile.read(CF_LOG_SIZE)
             if not record:
                 break  # 到达文件末尾
-
+            
+            print(f'cf log size:{CF_LOG_SIZE}')
             offset = 0
             
             # 解析 plan 数据
             plan_sec = struct.unpack_from('Q' * LOG_PLAN_NUM, record, offset)
+            # print(plan_sec)
             offset += 8 * LOG_PLAN_NUM
             plan_nsec = struct.unpack_from('Q' * LOG_PLAN_NUM, record, offset)
+            print(plan_nsec)
             offset += 8 * LOG_PLAN_NUM
             plan_joint = []
             for _ in range(SYSTEM_AXES):
@@ -103,7 +106,6 @@ def parse_my_log(input_file):
                 plan_joint.append(joint_data)
                 offset += 4 * LOG_PLAN_NUM
             log_data['plan'].append((plan_sec, plan_nsec, plan_joint))
-
             offset = CF_LOG_PLAN_SIZE
             
             # 解析 argu 数据
@@ -346,6 +348,6 @@ if __name__ == "__main__":
     folder_name = base_path
 
     log_data = parse_my_log(log_file_path)
-    write_log_data_to_txt(log_data, folder_name)
+    # write_log_data_to_txt(log_data, folder_name)
 
     print(f"Parsed log data has been written to '{folder_name}'.")
