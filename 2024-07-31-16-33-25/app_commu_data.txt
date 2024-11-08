@@ -1,0 +1,1000 @@
+time:28775.250605502;type:2,buff:_RDY
+time:28775.308071170;type:1,buff:VCHK 0
+time:28775.310623170;type:2,buff:VCHK 1
+time:28775.410689211;type:1,buff:PLAC 5,1,0.00,0.00
+time:28775.410845097;type:2,buff:PLAC
+time:28779.558297034;type:2,buff:_RDY
+time:28784.706803295;type:1,buff:VCHK 0
+time:28784.709704781;type:2,buff:VCHK 0
+time:28784.868507880;type:1,buff:PICK 5,1,0.19,0.03
+time:28784.869682889;type:2,buff:PICK
+time:28786.665516214;type:2,buff:_RDY
+time:28786.895460180;type:1,buff:PCKM 6,2
+time:28786.897504294;type:2,buff:PCKM
+time:28788.377335534;type:2,buff:_RDY
+time:28788.554041183;type:1,buff:VCHK 0
+time:28788.557308916;type:2,buff:VCHK 1
+time:28788.573900685;type:1,buff:PLAC 6,2,0,0
+time:28788.577309218;type:2,buff:PLAC
+time:28790.401113968;type:2,buff:_RDY
+time:28790.846279080;type:1,buff:PLCM 3,24
+time:28790.849145365;type:2,buff:PLCM
+time:28793.284854251;type:2,buff:_RDY
+time:28793.948984282;type:1,buff:VCHK 0
+time:28793.952813539;type:2,buff:VCHK 0
+time:28794.741264085;type:1,buff:PICK 3,24,0,0
+time:28794.744733798;type:2,buff:PICK
+time:28796.412564020;type:2,buff:_RDY
+time:28796.491031513;type:1,buff:VCHK 0
+time:28796.492569417;type:2,buff:VCHK 1
+time:28796.592803916;type:1,buff:PLAC 5,1,0.00,0.00
+time:28796.596577021;type:2,buff:PLAC
+time:28800.744141262;type:2,buff:_RDY
+time:28805.887691867;type:1,buff:VCHK 0
+time:28805.887856134;type:2,buff:VCHK 0
+time:28806.050059385;type:1,buff:PICK 5,1,0.19,0.07
+time:28806.051617404;type:2,buff:PICK
+time:28807.847437320;type:2,buff:_RDY
+time:28808.120300136;type:1,buff:PCKM 7,2
+time:28808.123449697;type:2,buff:PCKM
+time:28810.199191703;type:2,buff:_RDY
+time:28810.351638689;type:1,buff:VCHK 0
+time:28810.355204784;type:2,buff:VCHK 1
+time:28810.371221620;type:1,buff:PLAC 7,2,0,0
+time:28810.371368286;type:2,buff:PLAC
+time:28812.275005786;type:2,buff:_RDY
+time:28812.375304818;type:1,buff:PLCM 4,2
+time:28812.379042722;type:2,buff:PLCM
+time:28813.990843771;type:2,buff:_RDY
+time:28814.057338237;type:1,buff:VCHK 0
+time:28814.058938999;type:2,buff:VCHK 0
+time:28814.077057777;type:1,buff:PICK 4,2,0,0
+time:28814.078853815;type:2,buff:PICK
+time:28816.098609392;type:2,buff:_RDY
+time:28816.717106822;type:1,buff:PCKM 2,13
+time:28816.718592764;type:2,buff:PCKM
+time:28818.462389602;type:2,buff:_RDY
+time:28818.987659008;type:1,buff:VCHK 0
+time:28818.990361026;type:2,buff:VCHK 1
+time:28819.982358056;type:1,buff:PLAC 2,13,0,0
+time:28819.986272798;type:2,buff:PLAC
+time:28821.514137784;type:2,buff:_RDY
+time:28894.012405407;type:1,buff:PLCM 2,14
+time:28894.015127540;type:2,buff:PLCM
+time:28894.167069993;type:2,buff:_RDY
+time:28894.559717551;type:1,buff:VCHK 0
+time:28894.563058199;type:2,buff:VCHK 0
+time:28895.308932676;type:1,buff:PICK 2,14,0,0
+time:28895.310984332;type:2,buff:PICK
+time:28896.998774627;type:2,buff:_RDY
+time:28897.076259872;type:1,buff:VCHK 0
+time:28897.078796786;type:2,buff:VCHK 1
+time:28897.179619627;type:1,buff:PLAC 5,1,0.00,0.00
+time:28897.182797684;type:2,buff:PLAC
+time:28900.306489626;type:2,buff:_RDY
+time:28905.418019130;type:1,buff:VCHK 0
+time:28905.418221111;type:2,buff:VCHK 0
+time:28905.579412782;type:1,buff:PICK 5,1,-0.03,-1.37
+time:28905.581969810;type:2,buff:PICK
+time:28907.381749725;type:2,buff:_RDY
+time:28908.810480631;type:1,buff:PCKM 6,2
+time:28908.813649469;type:2,buff:PCKM
+time:28910.293478195;type:2,buff:_RDY
+time:28910.452501713;type:1,buff:VCHK 0
+time:28910.453542627;type:2,buff:VCHK 1
+time:28910.471785443;type:1,buff:PLAC 6,2,0,0
+time:28910.473489291;type:2,buff:PLAC
+time:28912.297292364;type:2,buff:_RDY
+time:28913.029506729;type:1,buff:PLCM 2,15
+time:28913.033254690;type:2,buff:PLCM
+time:28914.961044414;type:2,buff:_RDY
+time:28915.526835719;type:1,buff:VCHK 0
+time:28915.529020633;type:2,buff:VCHK 0
+time:28916.947889672;type:1,buff:PICK 2,15,0,0
+time:28916.948947348;type:2,buff:PICK
+time:28918.640669148;type:2,buff:_RDY
+time:28918.720855573;type:1,buff:VCHK 0
+time:28918.724697401;type:2,buff:VCHK 1
+time:28918.822492205;type:1,buff:PLAC 5,1,0.00,0.00
+time:28918.824691367;type:2,buff:PLAC
+time:28921.948377441;type:2,buff:_RDY
+time:28927.096048122;type:1,buff:VCHK 0
+time:28927.099979626;type:2,buff:VCHK 0
+time:28927.258135715;type:1,buff:PICK 5,1,-0.03,-1.34
+time:28927.259906610;type:2,buff:PICK
+time:28929.059708316;type:2,buff:_RDY
+time:28929.285080473;type:1,buff:PCKM 7,2
+time:28929.287698682;type:2,buff:PCKM
+time:28931.363424764;type:2,buff:_RDY
+time:28931.532070453;type:1,buff:VCHK 0
+time:28931.535458034;type:2,buff:VCHK 1
+time:28931.554399821;type:1,buff:PLAC 7,2,0,0
+time:28931.555444925;type:2,buff:PLAC
+time:28933.459257587;type:2,buff:_RDY
+time:29087.237064254;type:1,buff:PLCM 8,1
+time:29087.240369701;type:2,buff:PLCM
+time:29088.960150085;type:2,buff:_RDY
+time:29089.140724382;type:1,buff:VCHK 0
+time:29089.144162248;type:2,buff:VCHK 0
+time:29089.162645597;type:1,buff:PICK 8,1,0,0
+time:29089.164162549;type:2,buff:PICK
+time:29091.147977256;type:2,buff:_RDY
+time:29091.220723912;type:1,buff:PCKM 4,1
+time:29091.224068749;type:2,buff:PCKM
+time:29091.947872829;type:2,buff:_RDY
+time:29092.020056285;type:1,buff:VCHK 0
+time:29092.020211332;type:2,buff:VCHK 1
+time:29092.041233272;type:1,buff:PLAC 4,1,0,0
+time:29092.043975519;type:2,buff:PLAC
+time:29093.935645859;type:2,buff:_RDY
+time:29094.075676465;type:1,buff:PLCM 9,1
+time:29094.075828161;type:2,buff:PLCM
+time:29095.687496791;type:2,buff:_RDY
+time:29095.849159471;type:1,buff:VCHK 0
+time:29095.851520385;type:2,buff:VCHK 0
+time:29095.868692953;type:1,buff:PICK 9,1,0,0
+time:29095.871524038;type:2,buff:PICK
+time:29097.839282519;type:2,buff:_RDY
+time:29097.919308031;type:1,buff:PCKM 4,2
+time:29097.919481516;type:2,buff:PCKM
+time:29099.531107403;type:2,buff:_RDY
+time:29099.599299850;type:1,buff:VCHK 0
+time:29099.603165983;type:2,buff:VCHK 1
+time:29099.623126056;type:1,buff:PLAC 4,2,0,0
+time:29099.623271885;type:2,buff:PLAC
+time:29101.514934681;type:2,buff:_RDY
+time:29144.272231536;type:1,buff:PLCM 4,1
+time:29144.274849745;type:2,buff:PLCM
+time:29144.394776965;type:2,buff:_RDY
+time:29144.591201316;type:1,buff:VCHK 0
+time:29144.594782496;type:2,buff:VCHK 0
+time:29144.613022798;type:1,buff:PICK 4,1,0,0
+time:29144.614781960;type:2,buff:PICK
+time:29146.630605195;type:2,buff:_RDY
+time:29147.828257355;type:1,buff:PCKM 3,23
+time:29147.830479145;type:2,buff:PCKM
+time:29150.158212045;type:2,buff:_RDY
+time:29150.420767968;type:1,buff:VCHK 0
+time:29150.422217872;type:2,buff:VCHK 1
+time:29151.168147663;type:1,buff:PLAC 3,23,0,0
+time:29151.170151548;type:2,buff:PLAC
+time:29152.697993067;type:2,buff:_RDY
+time:29157.899492920;type:1,buff:PLCM 6,1
+time:29157.901502672;type:2,buff:PLCM
+time:29160.337250109;type:2,buff:_RDY
+time:29160.501278732;type:1,buff:VCHK 0
+time:29160.501429589;type:2,buff:VCHK 0
+time:29160.521295795;type:1,buff:PICK 6,1,0,0
+time:29160.521449167;type:2,buff:PICK
+time:29162.741946961;type:2,buff:ERR: 7379
+time:27087.611215989;type:1,buff:PLAC 5,1,0.00,0.00
+time:27087.614369741;type:2,buff:PLAC
+time:27090.738007206;type:2,buff:_RDY
+time:27095.865608022;type:1,buff:VCHK 0
+time:27095.869524440;type:2,buff:VCHK 0
+time:27096.027792836;type:1,buff:PICK 5,1,-0.05,-1.02
+time:27096.029534398;type:2,buff:PICK
+time:27097.845340367;type:2,buff:_RDY
+time:27098.090628177;type:1,buff:PCKM 7,2
+time:27098.093346958;type:2,buff:PCKM
+time:27100.169091479;type:2,buff:_RDY
+time:27100.348109432;type:1,buff:VCHK 0
+time:27100.349150346;type:2,buff:VCHK 1
+time:27100.370137086;type:1,buff:PLAC 7,2,0,0
+time:27100.373113162;type:2,buff:PLAC
+time:27102.276887271;type:2,buff:_RDY
+time:27231.979036589;type:1,buff:PLCM 8,1
+time:27231.980333122;type:2,buff:PLCM
+time:27233.700128593;type:2,buff:_RDY
+time:27233.852522778;type:1,buff:VCHK 0
+time:27233.856153406;type:2,buff:VCHK 0
+time:27233.872161023;type:1,buff:PICK 8,1,0,0
+time:27233.872310204;type:2,buff:PICK
+time:27235.851955387;type:2,buff:_RDY
+time:27235.945605812;type:1,buff:PCKM 4,1
+time:27235.947948287;type:2,buff:PCKM
+time:27236.671906576;type:2,buff:_RDY
+time:27236.740740166;type:1,buff:VCHK 0
+time:27236.743929118;type:2,buff:VCHK 1
+time:27236.763933610;type:1,buff:PLAC 4,1,0,0
+time:27236.764082791;type:2,buff:PLAC
+time:27238.655671835;type:2,buff:_RDY
+time:27238.825185790;type:1,buff:PLCM 9,1
+time:27238.827694209;type:2,buff:PLCM
+time:27240.439501963;type:2,buff:_RDY
+time:27240.599540414;type:1,buff:VCHK 0
+time:27240.599695462;type:2,buff:VCHK 0
+time:27240.621435649;type:1,buff:PICK 9,1,0,0
+time:27240.623527535;type:2,buff:PICK
+time:27242.591345519;type:2,buff:_RDY
+time:27242.703641883;type:1,buff:PCKM 4,2
+time:27242.707414149;type:2,buff:PCKM
+time:27244.319122170;type:2,buff:_RDY
+time:27244.375141284;type:1,buff:VCHK 0
+time:27244.375294656;type:2,buff:VCHK 1
+time:27244.395134043;type:1,buff:PLAC 4,2,0,0
+time:27244.395287415;type:2,buff:PLAC
+time:27246.286884002;type:2,buff:_RDY
+time:27288.979375991;type:1,buff:PLCM 4,1
+time:27288.982870009;type:2,buff:PLCM
+time:27289.102796391;type:2,buff:_RDY
+time:27289.172623961;type:1,buff:VCHK 0
+time:27289.174842399;type:2,buff:VCHK 0
+time:27289.196057101;type:1,buff:PICK 4,1,0,0
+time:27289.198816948;type:2,buff:PICK
+time:27291.214550506;type:2,buff:_RDY
+time:27292.392360764;type:1,buff:PCKM 3,15
+time:27292.394536459;type:2,buff:PCKM
+time:27294.722225780;type:2,buff:_RDY
+time:27294.998250728;type:1,buff:VCHK 0
+time:27294.998471147;type:2,buff:VCHK 1
+time:27296.374677794;type:1,buff:PLAC 3,15,0,0
+time:27296.378096383;type:2,buff:PLAC
+time:27297.905903541;type:2,buff:_RDY
+time:27326.109818773;type:1,buff:PLCM 6,1
+time:27326.111220906;type:2,buff:PLCM
+time:27328.546941524;type:2,buff:_RDY
+time:27328.689246721;type:1,buff:VCHK 0
+time:27328.690965654;type:2,buff:VCHK 0
+time:27328.708814566;type:1,buff:PICK 6,1,0,0
+time:27328.710960928;type:2,buff:PICK
+time:27330.810719388;type:2,buff:_RDY
+time:27330.886762271;type:1,buff:PCKM 4,1
+time:27330.886910614;type:2,buff:PCKM
+time:27331.658655410;type:2,buff:_RDY
+time:27331.726666829;type:1,buff:VCHK 0
+time:27331.726816010;type:2,buff:VCHK 1
+time:27331.748075130;type:1,buff:PLAC 4,1,0,0
+time:27331.750660654;type:2,buff:PLAC
+time:27333.642522079;type:2,buff:_RDY
+time:27333.776388496;type:1,buff:PLCM 4,2
+time:27333.778452724;type:2,buff:PLCM
+time:27333.978418027;type:2,buff:_RDY
+time:27334.072151422;type:1,buff:VCHK 0
+time:27334.074447803;type:2,buff:VCHK 0
+time:27334.091980752;type:1,buff:PICK 4,2,0,0
+time:27334.094443914;type:2,buff:PICK
+time:27336.110317435;type:2,buff:_RDY
+time:27336.814232679;type:1,buff:PCKM 3,16
+time:27336.818201060;type:2,buff:PCKM
+time:27339.141942953;type:2,buff:_RDY
+time:27339.646062190;type:1,buff:VCHK 0
+time:27339.649876361;type:2,buff:VCHK 1
+time:27340.435449726;type:1,buff:PLAC 3,16,0,0
+time:27340.437858412;type:2,buff:PLAC
+time:27341.965663053;type:2,buff:_RDY
+time:27342.104417242;type:1,buff:PLCM 7,1
+time:27342.105694499;type:2,buff:PLCM
+time:27344.017453978;type:2,buff:_RDY
+time:27344.206172883;type:1,buff:VCHK 0
+time:27344.209485035;type:2,buff:VCHK 0
+time:27344.225898290;type:1,buff:PICK 7,1,0,0
+time:27344.229487851;type:2,buff:PICK
+time:27346.261256683;type:2,buff:_RDY
+time:27346.353173088;type:1,buff:PCKM 4,2
+time:27346.353395183;type:2,buff:PCKM
+time:27347.965042022;type:2,buff:_RDY
+time:27348.033642622;type:1,buff:VCHK 0
+time:27348.037062888;type:2,buff:VCHK 1
+time:27348.057074084;type:1,buff:PLAC 4,2,0,0
+time:27348.057249246;type:2,buff:PLAC
+time:27349.948840805;type:2,buff:_RDY
+time:27379.286060930;type:1,buff:PLCM 3,17
+time:27379.286221006;type:2,buff:PLCM
+time:27381.613795508;type:2,buff:_RDY
+time:27381.955534655;type:1,buff:VCHK 0
+time:27381.957784941;type:2,buff:VCHK 0
+time:27383.207913588;type:1,buff:PICK 3,17,0,0
+time:27383.209780026;type:2,buff:PICK
+time:27384.877473637;type:2,buff:_RDY
+time:27384.952432865;type:1,buff:VCHK 0
+time:27384.953496408;type:2,buff:VCHK 1
+time:27385.055559629;type:1,buff:PLAC 5,1,0.00,0.00
+time:27385.057472162;type:2,buff:PLAC
+time:27389.205028024;type:2,buff:_RDY
+time:27394.304638978;type:1,buff:VCHK 0
+time:27394.304800730;type:2,buff:VCHK 0
+time:27394.465830648;type:1,buff:PICK 5,1,0.15,-0.44
+time:27394.468747219;type:2,buff:PICK
+time:27396.264366830;type:2,buff:_RDY
+time:27396.420445283;type:1,buff:PCKM 6,2
+time:27396.420595302;type:2,buff:PCKM
+time:27397.900227914;type:2,buff:_RDY
+time:27398.046284425;type:1,buff:VCHK 0
+time:27398.048257301;type:2,buff:VCHK 1
+time:27398.065970441;type:1,buff:PLAC 6,2,0,0
+time:27398.068247545;type:2,buff:PLAC
+time:27399.892023800;type:2,buff:_RDY
+time:27400.666200748;type:1,buff:PLCM 3,18
+time:27400.667974157;type:2,buff:PLCM
+time:27403.103714052;type:2,buff:_RDY
+time:27403.764848731;type:1,buff:VCHK 0
+time:27403.767668083;type:2,buff:VCHK 0
+time:27404.556246859;type:1,buff:PICK 3,18,0,0
+time:27404.559587506;type:2,buff:PICK
+time:27406.227400965;type:2,buff:_RDY
+time:27406.302213525;type:1,buff:VCHK 0
+time:27406.303432115;type:2,buff:VCHK 1
+time:27406.405500366;type:1,buff:PLAC 5,1,0.00,0.00
+time:27406.407416252;type:2,buff:PLAC
+time:27410.554983847;type:2,buff:_RDY
+time:27415.650534230;type:1,buff:VCHK 0
+time:27415.650692630;type:2,buff:VCHK 0
+time:27415.812966281;type:1,buff:PICK 5,1,0.16,-0.31
+time:27415.814501671;type:2,buff:PICK
+time:27417.610314882;type:2,buff:_RDY
+time:27417.848086656;type:1,buff:PCKM 7,2
+time:27417.850320179;type:2,buff:PCKM
+time:27419.926076433;type:2,buff:_RDY
+time:27420.080837399;type:1,buff:VCHK 0
+time:27420.082109628;type:2,buff:VCHK 1
+time:27420.100049054;type:1,buff:PLAC 7,2,0,0
+time:27420.102094844;type:2,buff:PLAC
+time:27422.005930972;type:2,buff:_RDY
+time:27422.121949317;type:1,buff:PLCM 4,1
+time:27422.122097659;type:2,buff:PLCM
+time:27423.733757908;type:2,buff:_RDY
+time:27423.801781898;type:1,buff:VCHK 0
+time:27423.801932755;type:2,buff:VCHK 0
+time:27423.822937095;type:1,buff:PICK 4,1,0,0
+time:27423.825778237;type:2,buff:PICK
+time:27425.841477434;type:2,buff:_RDY
+time:27426.493850667;type:1,buff:PCKM 2,4
+time:27426.497463695;type:2,buff:PCKM
+time:27428.337258462;type:2,buff:_RDY
+time:27428.503974017;type:1,buff:VCHK 0
+time:27428.505273064;type:2,buff:VCHK 1
+time:27429.705225795;type:1,buff:PLAC 2,4,0,0
+time:27429.709138861;type:2,buff:PLAC
+time:27431.236974514;type:2,buff:_RDY
+time:27431.358764818;type:1,buff:PLCM 4,2
+time:27431.360974875;type:2,buff:PLCM
+time:27433.232779847;type:2,buff:_RDY
+time:27433.319202538;type:1,buff:VCHK 0
+time:27433.320801624;type:2,buff:VCHK 0
+time:27433.339353697;type:1,buff:PICK 4,2,0,0
+time:27433.340817011;type:2,buff:PICK
+time:27435.360535711;type:2,buff:_RDY
+time:27436.176620768;type:1,buff:PCKM 2,5
+time:27436.180532158;type:2,buff:PCKM
+time:27438.036313589;type:2,buff:_RDY
+time:27438.596708398;type:1,buff:VCHK 0
+time:27438.600284550;type:2,buff:VCHK 1
+time:27439.370017918;type:1,buff:PLAC 2,5,0,0
+time:27439.372204508;type:2,buff:PLAC
+time:27440.900172579;type:2,buff:_RDY
+time:27520.156408390;type:1,buff:PLCM 2,7
+time:27520.156574332;type:2,buff:PLCM
+time:27520.340343447;type:2,buff:_RDY
+time:27520.698826897;type:1,buff:VCHK 0
+time:27520.700312001;type:2,buff:VCHK 0
+time:27521.467077675;type:1,buff:PICK 2,7,0,0
+time:27521.468276988;type:2,buff:PICK
+time:27523.152103932;type:2,buff:_RDY
+time:27523.216919693;type:1,buff:VCHK 0
+time:27523.220129597;type:2,buff:VCHK 1
+time:27523.320118534;type:1,buff:PLAC 5,1,0.00,0.00
+time:27523.320279448;type:2,buff:PLAC
+time:27526.443787847;type:2,buff:_RDY
+time:27531.589401003;type:1,buff:VCHK 0
+time:27531.591271632;type:2,buff:VCHK 0
+time:27531.751447531;type:1,buff:PICK 5,1,-0.04,-1.13
+time:27531.755247455;type:2,buff:PICK
+time:27533.551074914;type:2,buff:_RDY
+time:27534.932783655;type:1,buff:PCKM 6,2
+time:27534.934940911;type:2,buff:PCKM
+time:27536.414758742;type:2,buff:_RDY
+time:27536.605348275;type:1,buff:VCHK 0
+time:27536.606769684;type:2,buff:VCHK 1
+time:27536.624897682;type:1,buff:PLAC 6,2,0,0
+time:27536.626769148;type:2,buff:PLAC
+time:27538.450588984;type:2,buff:_RDY
+time:27540.091445951;type:1,buff:PLCM 2,8
+time:27540.094484046;type:2,buff:PLCM
+time:27542.118198785;type:2,buff:_RDY
+time:27542.446501592;type:1,buff:VCHK 0
+time:27542.450226925;type:2,buff:VCHK 0
+time:27543.138178134;type:1,buff:PICK 2,8,0,0
+time:27543.138334858;type:2,buff:PICK
+time:27544.821962333;type:2,buff:_RDY
+time:27544.885985257;type:1,buff:VCHK 0
+time:27544.886134437;type:2,buff:VCHK 1
+time:27544.989993698;type:1,buff:PLAC 5,1,0.00,0.00
+time:27544.990148745;type:2,buff:PLAC
+time:27548.113620268;type:2,buff:_RDY
+time:27553.301553875;type:1,buff:VCHK 0
+time:27553.305213837;type:2,buff:VCHK 0
+time:27553.483486723;type:1,buff:PICK 5,1,-0.04,-1.17
+time:27553.485187218;type:2,buff:PICK
+time:27555.280970258;type:2,buff:_RDY
+time:27555.458579375;type:1,buff:PCKM 7,2
+time:27555.460967946;type:2,buff:PCKM
+time:27557.536730066;type:2,buff:_RDY
+time:27557.683075720;type:1,buff:VCHK 0
+time:27557.684740176;type:2,buff:VCHK 1
+time:27557.704758078;type:1,buff:PLAC 7,2,0,0
+time:27557.704903069;type:2,buff:PLAC
+time:27559.608502016;type:2,buff:_RDY
+time:27695.639799776;type:1,buff:PLCM 8,1
+time:27695.643371738;type:2,buff:PLCM
+time:27697.363146256;type:2,buff:_RDY
+time:27697.531770154;type:1,buff:VCHK 0
+time:27697.535168630;type:2,buff:VCHK 0
+time:27697.553843065;type:1,buff:PICK 8,1,0,0
+time:27697.555170608;type:2,buff:PICK
+time:27699.570976243;type:2,buff:_RDY
+time:27699.706954659;type:1,buff:PCKM 4,1
+time:27699.707104678;type:2,buff:PCKM
+time:27700.430865177;type:2,buff:_RDY
+time:27700.512936479;type:1,buff:VCHK 0
+time:27700.514882536;type:2,buff:VCHK 1
+time:27700.534886190;type:1,buff:PLAC 4,1,0,0
+time:27700.535044590;type:2,buff:PLAC
+time:27702.426643691;type:2,buff:_RDY
+time:27702.567405956;type:1,buff:PLCM 9,1
+time:27702.570656927;type:2,buff:PLCM
+time:27704.182522508;type:2,buff:_RDY
+time:27704.342464580;type:1,buff:VCHK 0
+time:27704.342640580;type:2,buff:VCHK 0
+time:27704.361281491;type:1,buff:PICK 9,1,0,0
+time:27704.362557072;type:2,buff:PICK
+time:27706.330334828;type:2,buff:_RDY
+time:27706.423743880;type:1,buff:PCKM 4,2
+time:27706.426323537;type:2,buff:PCKM
+time:27708.038146377;type:2,buff:_RDY
+time:27708.104012271;type:1,buff:VCHK 0
+time:27708.106179585;type:2,buff:VCHK 1
+time:27708.124160916;type:1,buff:PLAC 4,2,0,0
+time:27708.126165639;type:2,buff:PLAC
+time:27710.017906379;type:2,buff:_RDY
+time:27752.763856264;type:1,buff:PLCM 4,1
+time:27752.765841712;type:2,buff:PLCM
+time:27752.885778988;type:2,buff:_RDY
+time:27752.955229416;type:1,buff:VCHK 0
+time:27752.957812425;type:2,buff:VCHK 0
+time:27752.977821108;type:1,buff:PICK 4,1,0,0
+time:27752.977970289;type:2,buff:PICK
+time:27754.993580647;type:2,buff:_RDY
+time:27756.100169582;type:1,buff:PCKM 3,17
+time:27756.101500477;type:2,buff:PCKM
+time:27758.429256846;type:2,buff:_RDY
+time:27758.961292193;type:1,buff:VCHK 0
+time:27758.961448079;type:2,buff:VCHK 1
+time:27760.357141275;type:1,buff:PLAC 3,17,0,0
+time:27760.357308056;type:2,buff:PLAC
+time:27761.884935022;type:2,buff:_RDY
+time:27783.794881692;type:1,buff:PLCM 6,1
+time:27783.795042606;type:2,buff:PLCM
+time:27786.230588063;type:2,buff:_RDY
+time:27786.387993219;type:1,buff:VCHK 0
+time:27786.390609752;type:2,buff:VCHK 0
+time:27786.407195655;type:1,buff:PICK 6,1,0,0
+time:27786.410602511;type:2,buff:PICK
+time:27788.770308742;type:2,buff:_RDY
+time:27788.884386895;type:1,buff:PCKM 4,1
+time:27788.886482971;type:2,buff:PCKM
+time:27789.658216873;type:2,buff:_RDY
+time:27789.722155148;type:1,buff:VCHK 0
+time:27789.722319415;type:2,buff:VCHK 1
+time:27789.743170383;type:1,buff:PLAC 4,1,0,0
+time:27789.746208478;type:2,buff:PLAC
+time:27791.637995313;type:2,buff:_RDY
+time:27791.752080172;type:1,buff:PLCM 4,2
+time:27791.753992705;type:2,buff:PLCM
+time:27791.953963874;type:2,buff:_RDY
+time:27792.029995024;type:1,buff:VCHK 0
+time:27792.030145881;type:2,buff:VCHK 0
+time:27792.050009574;type:1,buff:PICK 4,2,0,0
+time:27792.050162945;type:2,buff:PICK
+time:27794.065751513;type:2,buff:_RDY
+time:27795.243526571;type:1,buff:PCKM 3,18
+time:27795.245724057;type:2,buff:PCKM
+time:27797.573443549;type:2,buff:_RDY
+time:27798.067253378;type:1,buff:VCHK 0
+time:27798.069444159;type:2,buff:VCHK 1
+time:27798.895758165;type:1,buff:PLAC 3,18,0,0
+time:27798.897327917;type:2,buff:PLAC
+time:27800.425145969;type:2,buff:_RDY
+time:27800.541157609;type:1,buff:PLCM 7,1
+time:27800.541305952;type:2,buff:PLCM
+time:27802.424973321;type:2,buff:_RDY
+time:27802.585000039;type:1,buff:VCHK 0
+time:27802.585150896;type:2,buff:VCHK 0
+time:27802.606127579;type:1,buff:PICK 7,1,0,0
+time:27802.608986321;type:2,buff:PICK
+time:27804.636737326;type:2,buff:_RDY
+time:27804.724778379;type:1,buff:PCKM 4,2
+time:27804.724935941;type:2,buff:PCKM
+time:27806.336575237;type:2,buff:_RDY
+time:27806.410545512;type:1,buff:VCHK 0
+time:27806.412598845;type:2,buff:VCHK 1
+time:27806.430109166;type:1,buff:PLAC 4,2,0,0
+time:27806.432602499;type:2,buff:PLAC
+time:27808.324418667;type:2,buff:_RDY
+time:27843.203378440;type:1,buff:PLCM 3,19
+time:27843.205060497;type:2,buff:PLCM
+time:27845.532777475;type:2,buff:_RDY
+time:27845.994299690;type:1,buff:VCHK 0
+time:27845.996902813;type:2,buff:VCHK 0
+time:27846.864700014;type:1,buff:PICK 3,19,0,0
+time:27846.864866795;type:2,buff:PICK
+time:27848.532472407;type:2,buff:_RDY
+time:27848.597466682;type:1,buff:VCHK 0
+time:27848.600493882;type:2,buff:VCHK 1
+time:27848.701178438;type:1,buff:PLAC 5,1,0.00,0.00
+time:27848.704496456;type:2,buff:PLAC
+time:27852.852057347;type:2,buff:_RDY
+time:27858.001755378;type:1,buff:VCHK 0
+time:27858.003633549;type:2,buff:VCHK 0
+time:27858.163733183;type:1,buff:PICK 5,1,0.16,-0.36
+time:27858.163894097;type:2,buff:PICK
+time:27859.959451689;type:2,buff:_RDY
+time:27860.159411125;type:1,buff:PCKM 6,2
+time:27860.159570363;type:2,buff:PCKM
+time:27861.639272537;type:2,buff:_RDY
+time:27861.787266723;type:1,buff:VCHK 0
+time:27861.787420095;type:2,buff:VCHK 1
+time:27861.807281273;type:1,buff:PLAC 6,2,0,0
+time:27861.807425425;type:2,buff:PLAC
+time:27863.631060042;type:2,buff:_RDY
+time:27864.491037815;type:1,buff:PLCM 3,20
+time:27864.491191186;type:2,buff:PLCM
+time:27866.926694738;type:2,buff:_RDY
+time:27867.559954375;type:1,buff:VCHK 0
+time:27867.562653041;type:2,buff:VCHK 0
+time:27869.236485699;type:1,buff:PICK 3,20,0,0
+time:27869.238513890;type:2,buff:PICK
+time:27870.906310587;type:2,buff:_RDY
+time:27870.969238121;type:1,buff:VCHK 0
+time:27870.970329320;type:2,buff:VCHK 1
+time:27871.071013038;type:1,buff:PLAC 5,1,0.00,0.00
+time:27871.074331057;type:2,buff:PLAC
+time:27875.221895299;type:2,buff:_RDY
+time:27880.341498174;type:1,buff:VCHK 0
+time:27880.341673335;type:2,buff:VCHK 0
+time:27880.504340053;type:1,buff:PICK 5,1,0.17,-0.19
+time:27880.505411139;type:2,buff:PICK
+time:27882.301226026;type:2,buff:_RDY
+time:27882.489837654;type:1,buff:PCKM 7,2
+time:27882.493247025;type:2,buff:PCKM
+time:27884.568976461;type:2,buff:_RDY
+time:27884.750223747;type:1,buff:VCHK 0
+time:27884.753000357;type:2,buff:VCHK 1
+time:27884.770307021;type:1,buff:PLAC 7,2,0,0
+time:27884.772994792;type:2,buff:PLAC
+time:27886.676814158;type:2,buff:_RDY
+time:27886.783196923;type:1,buff:PLCM 4,1
+time:27886.784848808;type:2,buff:PLCM
+time:27888.396639799;type:2,buff:_RDY
+time:27888.459116438;type:1,buff:VCHK 0
+time:27888.460666914;type:2,buff:VCHK 0
+time:27888.481224549;type:1,buff:PICK 4,1,0,0
+time:27888.484685043;type:2,buff:PICK
+time:27890.500421116;type:2,buff:_RDY
+time:27891.146047684;type:1,buff:PCKM 2,7
+time:27891.148417817;type:2,buff:PCKM
+time:27892.948169237;type:2,buff:_RDY
+time:27893.257522714;type:1,buff:VCHK 0
+time:27893.260189532;type:2,buff:VCHK 1
+time:27894.472082604;type:1,buff:PLAC 2,7,0,0
+time:27894.472239328;type:2,buff:PLAC
+time:27895.999910713;type:2,buff:_RDY
+time:27896.127896218;type:1,buff:PLCM 4,2
+time:27896.128053779;type:2,buff:PLCM
+time:27897.955686110;type:2,buff:_RDY
+time:27898.012399167;type:1,buff:VCHK 0
+time:27898.015711319;type:2,buff:VCHK 0
+time:27898.031747431;type:1,buff:PICK 4,2,0,0
+time:27898.035782859;type:2,buff:PICK
+time:27900.047638552;type:2,buff:_RDY
+time:27900.537458210;type:1,buff:PCKM 2,8
+time:27900.539476343;type:2,buff:PCKM
+time:27902.355287342;type:2,buff:_RDY
+time:27902.627196405;type:1,buff:VCHK 0
+time:27902.627360672;type:2,buff:VCHK 1
+time:27903.503206938;type:1,buff:PLAC 2,8,0,0
+time:27903.503370366;type:2,buff:PLAC
+time:27905.030996495;type:2,buff:_RDY
+time:27978.255958789;type:1,buff:PLCM 2,9
+time:27978.256123893;type:2,buff:PLCM
+time:27978.407888670;type:2,buff:_RDY
+time:27979.107783572;type:1,buff:VCHK 0
+time:27979.107959572;type:2,buff:VCHK 0
+time:27979.994532617;type:1,buff:PICK 2,9,0,0
+time:27979.995770484;type:2,buff:PICK
+time:27981.679577313;type:2,buff:_RDY
+time:27981.738363818;type:1,buff:VCHK 0
+time:27981.739634370;type:2,buff:VCHK 1
+time:27981.840143764;type:1,buff:PLAC 5,1,0.00,0.00
+time:27981.843603421;type:2,buff:PLAC
+time:27984.967295363;type:2,buff:_RDY
+time:27990.098825168;type:1,buff:VCHK 0
+time:27990.098987759;type:2,buff:VCHK 0
+time:27990.262762439;type:1,buff:PICK 5,1,-0.03,-1.27
+time:27990.262922515;type:2,buff:PICK
+time:27992.058565593;type:2,buff:_RDY
+time:27992.813466353;type:1,buff:PCKM 6,2
+time:27992.814582696;type:2,buff:PCKM
+time:27994.294375384;type:2,buff:_RDY
+time:27994.439079210;type:1,buff:VCHK 0
+time:27994.442388848;type:2,buff:VCHK 1
+time:27994.458557379;type:1,buff:PLAC 6,2,0,0
+time:27994.462400883;type:2,buff:PLAC
+time:27996.286172109;type:2,buff:_RDY
+time:27997.147034910;type:1,buff:PLCM 2,11
+time:27997.150119100;type:2,buff:PLCM
+time:27999.133857540;type:2,buff:_RDY
+time:27999.741898057;type:1,buff:VCHK 0
+time:27999.742061485;type:2,buff:VCHK 0
+time:28000.857761353;type:1,buff:PICK 2,11,0,0
+time:28000.857918077;type:2,buff:PICK
+time:28002.545544104;type:2,buff:_RDY
+time:28002.667378829;type:1,buff:VCHK 0
+time:28002.669557876;type:2,buff:VCHK 1
+time:28002.769570280;type:1,buff:PLAC 5,1,0.00,0.00
+time:28002.769732032;type:2,buff:PLAC
+time:28005.893200202;type:2,buff:_RDY
+time:28011.077425239;type:1,buff:VCHK 0
+time:28011.080777619;type:2,buff:VCHK 0
+time:28011.240753213;type:1,buff:PICK 5,1,-0.03,-1.34
+time:28011.240912451;type:2,buff:PICK
+time:28013.044504861;type:2,buff:_RDY
+time:28013.234953594;type:1,buff:PCKM 7,2
+time:28013.236534242;type:2,buff:PCKM
+time:28015.312324019;type:2,buff:_RDY
+time:28015.508341894;type:1,buff:VCHK 0
+time:28015.508495265;type:2,buff:VCHK 1
+time:28015.527001244;type:1,buff:PLAC 7,2,0,0
+time:28015.528335491;type:2,buff:PLAC
+time:28017.432142286;type:2,buff:_RDY
+time:28159.758262627;type:1,buff:PLCM 8,1
+time:28159.758440303;type:2,buff:PLCM
+time:28161.478128498;type:2,buff:_RDY
+time:28161.626157884;type:1,buff:VCHK 0
+time:28161.626318798;type:2,buff:VCHK 0
+time:28161.646162376;type:1,buff:PICK 8,1,0,0
+time:28161.646309881;type:2,buff:PICK
+time:28163.629931825;type:2,buff:_RDY
+time:28163.709939737;type:1,buff:PCKM 4,1
+time:28163.710090594;type:2,buff:PCKM
+time:28164.433843550;type:2,buff:_RDY
+time:28164.503501825;type:1,buff:VCHK 0
+time:28164.505854358;type:2,buff:VCHK 1
+time:28164.523126660;type:1,buff:PLAC 4,1,0,0
+time:28164.525852984;type:2,buff:PLAC
+time:28166.417683399;type:2,buff:_RDY
+time:28166.545792942;type:1,buff:PLCM 9,1
+time:28166.549708522;type:2,buff:PLCM
+time:28168.161483590;type:2,buff:_RDY
+time:28168.339964325;type:1,buff:VCHK 0
+time:28168.341507258;type:2,buff:VCHK 0
+time:28168.361935826;type:1,buff:PICK 9,1,0,0
+time:28168.365506112;type:2,buff:PICK
+time:28170.333270458;type:2,buff:_RDY
+time:28170.415635931;type:1,buff:PCKM 4,2
+time:28170.417275245;type:2,buff:PCKM
+time:28172.029100599;type:2,buff:_RDY
+time:28172.095124056;type:1,buff:VCHK 0
+time:28172.097148894;type:2,buff:VCHK 1
+time:28172.114734643;type:1,buff:PLAC 4,2,0,0
+time:28172.117126566;type:2,buff:PLAC
+time:28174.008908372;type:2,buff:_RDY
+time:28216.736829994;type:1,buff:PLCM 4,1
+time:28216.736995099;type:2,buff:PLCM
+time:28216.856764757;type:2,buff:_RDY
+time:28216.920807794;type:1,buff:VCHK 0
+time:28216.920961166;type:2,buff:VCHK 0
+time:28216.940803068;type:1,buff:PICK 4,1,0,0
+time:28216.940950572;type:2,buff:PICK
+time:28218.956535788;type:2,buff:_RDY
+time:28219.815200266;type:1,buff:PCKM 3,19
+time:28219.816500990;type:2,buff:PCKM
+time:28222.144247301;type:2,buff:_RDY
+time:28222.833652605;type:1,buff:VCHK 0
+time:28222.836222204;type:2,buff:VCHK 1
+time:28223.525785070;type:1,buff:PLAC 3,19,0,0
+time:28223.528181184;type:2,buff:PLAC
+time:28225.055969065;type:2,buff:_RDY
+time:28242.222263889;type:1,buff:PLCM 6,1
+time:28242.222436536;type:2,buff:PLCM
+time:28244.658059936;type:2,buff:_RDY
+time:28244.799525362;type:1,buff:VCHK 0
+time:28244.802079038;type:2,buff:VCHK 0
+time:28244.822092749;type:1,buff:PICK 6,1,0,0
+time:28244.822246958;type:2,buff:PICK
+time:28247.093814078;type:2,buff:_RDY
+time:28247.211231202;type:1,buff:PCKM 4,1
+time:28247.213836002;type:2,buff:PCKM
+time:28247.985754285;type:2,buff:_RDY
+time:28248.098036401;type:1,buff:VCHK 0
+time:28248.101765924;type:2,buff:VCHK 1
+time:28248.118449045;type:1,buff:PLAC 4,1,0,0
+time:28248.121753654;type:2,buff:PLAC
+time:28250.013543841;type:2,buff:_RDY
+time:28250.146869687;type:1,buff:PLCM 4,2
+time:28250.149554106;type:2,buff:PLCM
+time:28250.349531142;type:2,buff:_RDY
+time:28250.422517493;type:1,buff:VCHK 0
+time:28250.425539664;type:2,buff:VCHK 0
+time:28250.442065223;type:1,buff:PICK 4,2,0,0
+time:28250.445552537;type:2,buff:PICK
+time:28252.461320458;type:2,buff:_RDY
+time:28253.298109816;type:1,buff:PCKM 3,20
+time:28253.301291225;type:2,buff:PCKM
+time:28255.628977192;type:2,buff:_RDY
+time:28255.859784395;type:1,buff:VCHK 0
+time:28255.860996281;type:2,buff:VCHK 1
+time:28257.174559509;type:1,buff:PLAC 3,20,0,0
+time:28257.176860080;type:2,buff:PLAC
+time:28258.704859999;type:2,buff:_RDY
+time:28258.793058614;type:1,buff:PLCM 7,1
+time:28258.796705166;type:2,buff:PLCM
+time:28260.652503358;type:2,buff:_RDY
+time:28260.830666454;type:1,buff:VCHK 0
+time:28260.832521159;type:2,buff:VCHK 0
+time:28260.852955594;type:1,buff:PICK 7,1,0,0
+time:28260.856525041;type:2,buff:PICK
+time:28262.900275281;type:2,buff:_RDY
+time:28263.050233125;type:1,buff:PCKM 4,2
+time:28263.052297353;type:2,buff:PCKM
+time:28264.664132764;type:2,buff:_RDY
+time:28264.754596750;type:1,buff:VCHK 0
+time:28264.756142197;type:2,buff:VCHK 1
+time:28264.774098385;type:1,buff:PLAC 4,2,0,0
+time:28264.776127413;type:2,buff:PLAC
+time:28266.667957829;type:2,buff:_RDY
+time:28300.296702632;type:1,buff:PLCM 4,1
+time:28300.296863546;type:2,buff:PLCM
+time:28300.416657508;type:2,buff:_RDY
+time:28300.482375899;type:1,buff:VCHK 0
+time:28300.484681498;type:2,buff:VCHK 0
+time:28300.502397153;type:1,buff:PICK 4,1,0,0
+time:28300.504677610;type:2,buff:PICK
+time:28302.520432120;type:2,buff:_RDY
+time:28303.586712034;type:1,buff:PCKM 2,9
+time:28303.588447729;type:2,buff:PCKM
+time:28305.360228562;type:2,buff:_RDY
+time:28305.641389357;type:1,buff:VCHK 0
+time:28305.644234690;type:2,buff:VCHK 1
+time:28306.778637489;type:1,buff:PLAC 2,9,0,0
+time:28306.780117565;type:2,buff:PLAC
+time:28308.307898741;type:2,buff:_RDY
+time:28308.930375445;type:1,buff:PLCM 3,21
+time:28308.931850492;type:2,buff:PLCM
+time:28310.535658628;type:2,buff:_RDY
+time:28310.835663992;type:1,buff:VCHK 0
+time:28310.835815687;type:2,buff:VCHK 0
+time:28311.847738428;type:1,buff:PICK 3,21,0,0
+time:28311.851600370;type:2,buff:PICK
+time:28313.519407963;type:2,buff:_RDY
+time:28313.593617095;type:1,buff:VCHK 0
+time:28313.595403914;type:2,buff:VCHK 1
+time:28313.695392851;type:1,buff:PLAC 5,1,0.00,0.00
+time:28313.695549574;type:2,buff:PLAC
+time:28317.842964635;type:2,buff:_RDY
+time:28322.978530708;type:1,buff:VCHK 0
+time:28322.978691622;type:2,buff:VCHK 0
+time:28323.140226911;type:1,buff:PICK 5,1,0.16,-0.22
+time:28323.142516587;type:2,buff:PICK
+time:28324.954280425;type:2,buff:_RDY
+time:28325.162404583;type:1,buff:PCKM 6,2
+time:28325.166274907;type:2,buff:PCKM
+time:28326.646081004;type:2,buff:_RDY
+time:28326.794025744;type:1,buff:VCHK 0
+time:28326.794190849;type:2,buff:VCHK 1
+time:28326.813131797;type:1,buff:PLAC 6,2,0,0
+time:28326.814169359;type:2,buff:PLAC
+time:28328.637923823;type:2,buff:_RDY
+time:28329.444550138;type:1,buff:PLCM 3,22
+time:28329.445889414;type:2,buff:PLCM
+time:28331.881626795;type:2,buff:_RDY
+time:28332.253666433;type:1,buff:VCHK 0
+time:28332.253826509;type:2,buff:VCHK 0
+time:28333.773538505;type:1,buff:PICK 3,22,0,0
+time:28333.773697743;type:2,buff:PICK
+time:28335.441305031;type:2,buff:_RDY
+time:28335.519979533;type:1,buff:VCHK 0
+time:28335.521300371;type:2,buff:VCHK 1
+time:28335.622023479;type:1,buff:PLAC 5,1,0.00,0.00
+time:28335.625298755;type:2,buff:PLAC
+time:28339.772806845;type:2,buff:_RDY
+time:28344.856608811;type:1,buff:VCHK 0
+time:28344.860374372;type:2,buff:VCHK 0
+time:28345.020381814;type:1,buff:PICK 5,1,0.17,-0.17
+time:28345.020538538;type:2,buff:PICK
+time:28346.832194261;type:2,buff:_RDY
+time:28347.040175106;type:1,buff:PCKM 7,2
+time:28347.040325963;type:2,buff:PCKM
+time:28349.115929683;type:2,buff:_RDY
+time:28349.255984596;type:1,buff:VCHK 0
+time:28349.256136291;type:2,buff:VCHK 1
+time:28349.278435488;type:1,buff:PLAC 7,2,0,0
+time:28349.279962497;type:2,buff:PLAC
+time:28351.183714816;type:2,buff:_RDY
+time:28351.296353122;type:1,buff:PLCM 4,2
+time:28351.299734836;type:2,buff:PLCM
+time:28352.911550132;type:2,buff:_RDY
+time:28352.987877969;type:1,buff:VCHK 0
+time:28352.991578997;type:2,buff:VCHK 0
+time:28353.008019070;type:1,buff:PICK 4,2,0,0
+time:28353.011575108;type:2,buff:PICK
+time:28355.035337617;type:2,buff:_RDY
+time:28355.615344690;type:1,buff:PCKM 2,11
+time:28355.615496385;type:2,buff:PCKM
+time:28357.387159887;type:2,buff:_RDY
+time:28357.713127760;type:1,buff:VCHK 0
+time:28357.715186960;type:2,buff:VCHK 1
+time:28359.371039126;type:1,buff:PLAC 2,11,0,0
+time:28359.371194174;type:2,buff:PLAC
+time:28360.898789293;type:2,buff:_RDY
+time:28436.133038517;type:1,buff:PLCM 2,12
+time:28436.135558669;type:2,buff:PLCM
+time:28436.287517884;type:2,buff:_RDY
+time:28436.439536603;type:1,buff:VCHK 0
+time:28436.439689974;type:2,buff:VCHK 0
+time:28437.680839271;type:1,buff:PICK 2,12,0,0
+time:28437.683379537;type:2,buff:PICK
+time:28439.367176308;type:2,buff:_RDY
+time:28439.449383381;type:1,buff:VCHK 0
+time:28439.451172714;type:2,buff:VCHK 1
+time:28439.551454985;type:1,buff:PLAC 5,1,0.00,0.00
+time:28439.555170260;type:2,buff:PLAC
+time:28442.678843764;type:2,buff:_RDY
+time:28447.764849082;type:1,buff:VCHK 0
+time:28447.766404586;type:2,buff:VCHK 0
+time:28447.928131799;type:1,buff:PICK 5,1,-0.03,-1.35
+time:28447.930403037;type:2,buff:PICK
+time:28449.730203905;type:2,buff:_RDY
+time:28451.422204789;type:1,buff:PCKM 6,2
+time:28451.422356484;type:2,buff:PCKM
+time:28452.901877630;type:2,buff:_RDY
+time:28453.060056349;type:1,buff:VCHK 0
+time:28453.061946253;type:2,buff:VCHK 1
+time:28453.080556155;type:1,buff:PLAC 6,2,0,0
+time:28453.081876993;type:2,buff:PLAC
+time:28454.905651572;type:2,buff:_RDY
+time:28455.970187409;type:1,buff:PLCM 2,13
+time:28455.973637008;type:2,buff:PLCM
+time:28457.929391452;type:2,buff:_RDY
+time:28458.466370722;type:1,buff:VCHK 0
+time:28458.469371103;type:2,buff:VCHK 0
+time:28458.975368511;type:1,buff:PICK 2,13,0,0
+time:28458.977354797;type:2,buff:PICK
+time:28460.665156824;type:2,buff:_RDY
+time:28460.743091288;type:1,buff:VCHK 0
+time:28460.745163059;type:2,buff:VCHK 1
+time:28460.846461939;type:1,buff:PLAC 5,1,0.00,0.00
+time:28460.849152225;type:2,buff:PLAC
+time:28463.972742757;type:2,buff:_RDY
+time:28469.070825863;type:1,buff:VCHK 0
+time:28469.072335273;type:2,buff:VCHK 0
+time:28469.253238102;type:1,buff:PICK 5,1,-0.03,-1.37
+time:28469.256311397;type:2,buff:PICK
+time:28471.056134893;type:2,buff:_RDY
+time:28471.267057451;type:1,buff:PCKM 7,2
+time:28471.268099204;type:2,buff:PCKM
+time:28473.343894010;type:2,buff:_RDY
+time:28473.504564386;type:1,buff:VCHK 0
+time:28473.507905033;type:2,buff:VCHK 1
+time:28473.524066858;type:1,buff:PLAC 7,2,0,0
+time:28473.527904496;type:2,buff:PLAC
+time:28475.431664357;type:2,buff:_RDY
+time:28623.759191019;type:1,buff:PLCM 8,1
+time:28623.761410295;type:2,buff:PLCM
+time:28625.481134528;type:2,buff:_RDY
+time:28625.642943036;type:1,buff:VCHK 0
+time:28625.645116217;type:2,buff:VCHK 0
+time:28625.662268671;type:1,buff:PICK 8,1,0,0
+time:28625.665124061;type:2,buff:PICK
+time:28627.648915301;type:2,buff:_RDY
+time:28627.734313002;type:1,buff:PCKM 4,1
+time:28627.736934563;type:2,buff:PCKM
+time:28628.460845920;type:2,buff:_RDY
+time:28628.529164918;type:1,buff:VCHK 0
+time:28628.532860080;type:2,buff:VCHK 1
+time:28628.548864344;type:1,buff:PLAC 4,1,0,0
+time:28628.549011849;type:2,buff:PLAC
+time:28630.440623522;type:2,buff:_RDY
+time:28630.583290776;type:1,buff:PLCM 9,1
+time:28630.584625862;type:2,buff:PLCM
+time:28632.196460435;type:2,buff:_RDY
+time:28632.358751686;type:1,buff:VCHK 0
+time:28632.360496600;type:2,buff:VCHK 0
+time:28632.380674578;type:1,buff:PICK 9,1,0,0
+time:28632.384472825;type:2,buff:PICK
+time:28634.352279914;type:2,buff:_RDY
+time:28634.457780165;type:1,buff:PCKM 4,2
+time:28634.460318755;type:2,buff:PCKM
+time:28636.072170928;type:2,buff:_RDY
+time:28636.153746915;type:1,buff:VCHK 0
+time:28636.156094420;type:2,buff:VCHK 1
+time:28636.173473998;type:1,buff:PLAC 4,2,0,0
+time:28636.176092207;type:2,buff:PLAC
+time:28638.067878204;type:2,buff:_RDY
+time:28680.755846993;type:1,buff:PLCM 4,1
+time:28680.756012936;type:2,buff:PLCM
+time:28680.875758289;type:2,buff:_RDY
+time:28680.946760030;type:1,buff:VCHK 0
+time:28680.947891459;type:2,buff:VCHK 0
+time:28680.969442237;type:1,buff:PICK 4,1,0,0
+time:28680.971894503;type:2,buff:PICK
+time:28682.987512405;type:2,buff:_RDY
+time:28683.682318394;type:1,buff:PCKM 3,21
+time:28683.683511841;type:2,buff:PCKM
+time:28686.011241390;type:2,buff:_RDY
+time:28686.357873337;type:1,buff:VCHK 0
+time:28686.359247813;type:2,buff:VCHK 1
+time:28686.883537485;type:1,buff:PLAC 3,21,0,0
+time:28686.887198285;type:2,buff:PLAC
+time:28688.415023042;type:2,buff:_RDY
+time:28699.790118370;type:1,buff:PLCM 6,1
+time:28699.793941760;type:2,buff:PLCM
+time:28702.229669083;type:2,buff:_RDY
+time:28702.370376870;type:1,buff:VCHK 0
+time:28702.373683994;type:2,buff:VCHK 0
+time:28702.390345325;type:1,buff:PICK 6,1,0,0
+time:28702.393675077;type:2,buff:PICK
+time:28704.801423432;type:2,buff:_RDY
+time:28704.897386161;type:1,buff:PCKM 4,1
+time:28704.897553780;type:2,buff:PCKM
+time:28705.669342995;type:2,buff:_RDY
+time:28705.737398832;type:1,buff:VCHK 0
+time:28705.737551365;type:2,buff:VCHK 1
+time:28705.758381381;type:1,buff:PLAC 4,1,0,0
+time:28705.761359133;type:2,buff:PLAC
+time:28707.653160215;type:2,buff:_RDY
+time:28707.731668774;type:1,buff:PLCM 4,2
+time:28707.733148012;type:2,buff:PLCM
+time:28707.933111639;type:2,buff:_RDY
+time:28708.017711474;type:1,buff:VCHK 0
+time:28708.021141798;type:2,buff:VCHK 0
+time:28708.038580880;type:1,buff:PICK 4,2,0,0
+time:28708.041144613;type:2,buff:PICK
+time:28710.056941867;type:2,buff:_RDY
+time:28710.692916932;type:1,buff:PCKM 3,22
+time:28710.693066951;type:2,buff:PCKM
+time:28713.020635586;type:2,buff:_RDY
+time:28713.224665650;type:1,buff:VCHK 0
+time:28713.224824050;type:2,buff:VCHK 1
+time:28714.359538619;type:1,buff:PLAC 3,22,0,0
+time:28714.360584561;type:2,buff:PLAC
+time:28715.888325509;type:2,buff:_RDY
+time:28715.986022256;type:1,buff:PLCM 7,1
+time:28715.988365570;type:2,buff:PLCM
+time:28717.816194015;type:2,buff:_RDY
+time:28717.972202067;type:1,buff:VCHK 0
+time:28717.972353762;type:2,buff:VCHK 0
+time:28717.993741111;type:1,buff:PICK 7,1,0,0
+time:28717.996197568;type:2,buff:PICK
+time:28720.027963886;type:2,buff:_RDY
+time:28720.136705888;type:1,buff:PCKM 4,2
+time:28720.139994573;type:2,buff:PCKM
+time:28721.751800651;type:2,buff:_RDY
+time:28721.830275687;type:1,buff:VCHK 0
+time:28721.831829514;type:2,buff:VCHK 1
+time:28721.851969778;type:1,buff:PLAC 4,2,0,0
+time:28721.855829206;type:2,buff:PLAC
+time:28723.747572460;type:2,buff:_RDY
+time:28757.882526709;type:1,buff:PLCM 4,1
+time:28757.884315204;type:2,buff:PLCM
+time:28758.004242424;type:2,buff:_RDY
+time:28758.076273346;type:1,buff:VCHK 0
+time:28758.076426718;type:2,buff:VCHK 0
+time:28758.096284543;type:1,buff:PICK 4,1,0,0
+time:28758.096437915;type:2,buff:PICK
+time:28760.116114711;type:2,buff:_RDY
+time:28760.916071465;type:1,buff:PCKM 2,12
+time:28760.916227351;type:2,buff:PCKM
+time:28762.643834705;type:2,buff:_RDY
+time:28763.253657850;type:1,buff:VCHK 0
+time:28763.255805888;type:2,buff:VCHK 1
+time:28764.102167968;type:1,buff:PLAC 2,12,0,0
+time:28764.103717606;type:2,buff:PLAC
+time:28765.631528954;type:2,buff:_RDY
+time:28770.449368979;type:1,buff:PLCM 3,23
+time:28770.451138197;type:2,buff:PLCM
+time:28772.054941305;type:2,buff:_RDY
+time:28772.304244429;type:1,buff:VCHK 0
+time:28772.306958181;type:2,buff:VCHK 0
+time:28773.579707015;type:1,buff:PICK 3,23,0,0
+time:28773.582823052;type:2,buff:PICK

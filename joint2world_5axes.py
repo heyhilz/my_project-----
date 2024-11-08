@@ -6,8 +6,27 @@ import matplotlib
 # matplotlib.use('Qt5Agg')
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+import struct
 
-# file_path = 'D:\\HuaweiMoveData\\Users\\12088\\Desktop\\数据\\2024-09-04-09-02-44\\out_data.txt'
+arm_lenth = 156
+
+LOG_PLAN_NUM = 1000
+LOG_ARGU_NUM = 100
+LOG_OUT_NUM = 3000
+LOG_IN_NUM = 10000
+
+SYSTEM_AXES = 9
+R_AXES = 6
+
+CF_LOG_PLAN_SIZE = (8 * LOG_PLAN_NUM) * 2 + (4 * SYSTEM_AXES * LOG_PLAN_NUM)
+CF_LOG_ARGU_SIZE = (8 * LOG_ARGU_NUM) * 2 + (4 * 20 * LOG_ARGU_NUM)
+CF_LOG_OUT_SIZE = (8 * LOG_OUT_NUM) * 2 + (4 * SYSTEM_AXES * LOG_OUT_NUM * 2)
+CF_LOG_IN_SIZE = (8 * LOG_IN_NUM) * 2 + (4 * SYSTEM_AXES * LOG_IN_NUM * 3)
+
+offset = CF_LOG_PLAN_SIZE + CF_LOG_ARGU_SIZE + CF_LOG_IN_SIZE
+LOG_SIZE = CF_LOG_PLAN_SIZE + CF_LOG_ARGU_SIZE + CF_LOG_IN_SIZE + CF_LOG_OUT_SIZE
+
+log_name = 'my_log.log'
 
 class Vector3:
     def __init__(self, x=0.0, y=0.0, z=0.0):
@@ -23,7 +42,7 @@ class TRANS:
         self.p = Vector3()
 
 def A2R(degree):
-    return degree * (math.pi / 180)
+    return degree * (180 / math.pi)
 
 def assign_joint_values_to_both_hands(joint_all):
     joint = np.zeros(5)
@@ -83,33 +102,75 @@ def joint_to_world_d156_aux(jt_value):
 
     return t6
 
-def process_txt_file(file_path):
-    df = pd.read_csv(file_path, sep=r'\s*:\s*|\s+|,|;', engine='python', header=None)
+def joint_to_world(joint):
+    jtin = assign_joint_values_to_both_hands(joint)
+    t6 = joint_to_world_d156_main(jtin)
+    return t6
+
+def data_to_dataframe(data):
+    records = []
+    for sec, nsec, encoders, joints in data:
+        for i in range(LOG_OUT_NUM):
+            time = sec[i] + 0.000000001 * nsec[i]  # ����ʱ�䲿��
+            record = {
+                'time': time
+            }
+            for axis in range(SYSTEM_AXES):
+                record[f'enco_{axis}'] = encoders[axis][i]
+                record[f'joint_{axis}'] = joints[axis][i]
+            records.append(record)
+    
+    df = pd.DataFrame(records)
     return df
 
-def process_data2(path):
-    file_name = os.path.basename(os.path.dirname(path))
-    number = ''.join(filter(str.isdigit, file_name))
-    output_file_path = f'D:\\HuaweiMoveData\\Users\\12088\\Desktop\\数据\\out_data_{number}.xlsx'
-    data = process_txt_file(path)
-    with pd.ExcelWriter(output_file_path, engine='openpyxl') as writer:
-        data.to_excel(writer, index=False, sheet_name='Sheet1')
-        print(f"DATA WRITTEN TO {output_file_path} - Sheet1")
+def process_data2(file_path):
+    global offset
 
-    z = data.iloc[:, 5].to_numpy()
-    t = data.iloc[:, 9].to_numpy()
-    r1 = data.iloc[:, 13].to_numpy()
-    r2 = data.iloc[:, 17].to_numpy()
-    x = data.iloc[:, 21].to_numpy()
+    file_name = os.path.basename(file_path)
+    number = ''.join(filter(str.isdigit, file_name))
+    output_xlsx_path = os.path.join(file_path, f"out_data_{number}.xlsx")
+
+    log_file = os.path.join(file_path, log_name)
+    
+    data = []
+    with open(log_file, 'rb') as log:
+        while True:
+            record = log.read()
+            if not record:
+                break
+            
+            out_sec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
+            offset += 8 * LOG_OUT_NUM
+            out_nsec = struct.unpack_from('Q' * LOG_OUT_NUM, record, offset)
+            offset += 8 * LOG_OUT_NUM
+            out_encoders = []
+            out_joints = []
+            for _ in range(SYSTEM_AXES):
+                enco_data = struct.unpack_from('i' * LOG_OUT_NUM, record, offset)
+                out_encoders.append(enco_data)
+                offset += 4 * LOG_OUT_NUM
+            for _ in range(SYSTEM_AXES):
+                joint_data = struct.unpack_from('f' * LOG_OUT_NUM, record, offset)
+                out_joints.append(joint_data)
+                offset += 4 * LOG_OUT_NUM
+            data.append((out_sec, out_nsec, out_encoders, out_joints))
+    
+    df = data_to_dataframe(data)
+
+    z = df.iloc[:,2].to_numpy()
+    t = df.iloc[:,4].to_numpy()
+    r1 = df.iloc[:,6].to_numpy()
+    r2 = df.iloc[:,8].to_numpy()
+    x = df.iloc[:,10].to_numpy()
 
     joint = []
     xx = []
     yy = []
     zz = []
     for i in range(len(x)):
-        index = i - 1
-        joint.append([z[index], t[index], r1[index], r2[index], x[index]])
-        result = joint_to_world_d156_main(assign_joint_values_to_both_hands(joint[i]))
+        index = i-1
+        joint.append([z[index],t[index],r1[index],r2[index],x[index]])
+        result = joint_to_world(joint[i])
         xx.append(result.p.x)
         yy.append(result.p.y)
         zz.append(result.p.z)
@@ -130,9 +191,10 @@ def process_data2(path):
     df_second = pd.DataFrame(data_second)
 
     try:
-        with pd.ExcelWriter(output_file_path, engine='openpyxl', mode='a') as writer:
+        with pd.ExcelWriter(output_xlsx_path, engine='openpyxl', mode='w') as writer:
+            df.to_excel(writer, index=False, sheet_name='Sheet1')
             df_second.to_excel(writer, index=False, sheet_name='Sheet2')
-            print(f"DATA WRITTEN TO {output_file_path} - Sheet2")
+            print(f"DATA WRITTEN TO {output_xlsx_path}")
     except Exception as e:
         print(f"Error writing data: {e}")
 
@@ -142,5 +204,5 @@ def process_data2(path):
     plt.ylabel('Y')
     plt.title('Track')
     plt.grid(True)
-    plt.axis('equal')  # 保持x和y的比例相同
+    plt.axis('equal')
     plt.show()
